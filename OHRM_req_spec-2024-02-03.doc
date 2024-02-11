@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>reqspec ORANGE HRM</title>
+<link type="text/css" rel="stylesheet" href="http://127.0.0.1:81/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://127.0.0.1:81/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Dossier d’exigences</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Projet: ORANGE HRM</p></div>
+<div class="summary"><p id="printedby">Imprimé(e) par Testlink le 03/02/2024</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table des matières</h1><div class="toc"><br/><p style="padding-left: 20px;"><b><a href="#toc_1">1. REQ 1 : authentification</a></b></p>
+<p style="padding-left: 30px;"><b><a href="#toc_1_1">1.1. REQ1.1 : connexion à l'application HRM</a></b></p>
+<p style="padding-left: 60px;"><a href="#toc_req9">REQ.1.1.1 : contrôle login mot de passe</a></p><p style="padding-left: 60px;"><a href="#toc_req12">REQ1.1.2 : régénération MDP</a></p><p style="padding-left: 60px;"><a href="#toc_req15">REQ1.1.3 : sécurité de la connexion</a></p><p style="padding-left: 60px;"><a href="#toc_req17">REQ1.1.4 : connexion junique par utilisateur</a></p><p style="padding-left: 60px;"><a href="#toc_req19">REQ1.1.5 : CHARTE GRAPHIQUE</a></p><p style="padding-left: 30px;"><b><a href="#toc_1_2">1.2. REQ1.2 : déconnexion à l'application HRM</a></b></p>
+<p style="padding-left: 60px;"><a href="#toc_req21">REQ1.2.1 : deconnexion via boutton</a></p><p style="padding-left: 60px;"><a href="#toc_req23">REQ1.2.2 : déconnexion suite fermeture navigateur</a></p><p style="padding-left: 60px;"><a href="#toc_req25">REQ1.2.3 : déconnexion suite l'expiration session</a></p><p style="padding-left: 60px;"><a href="#toc_req27">REQ1.2.4 : charte graphique</a></p></div><p style="page-break-before: always"></p><table class="req_spec"><tr><th colspan="2"><h2 class="doclevel"> <span class="label">1. Dossier d’exigences:</span> REQ 1 : authentification</h2></th></tr>
+<a name='toc_1'></a>
+<tr><td width="20%"><span class="label">Révision</span></td><td> 1</td></tr>
+<tr><td width="20%"><span class="label">Auteur</span></td><td> amine</td></tr>
+<tr><td width="20%"><span class="label">Type</span></td><td>Dossier d’exigences utilisateur</td></tr><tr><td width="20%"><span class="label">Nombre total d’exigences (Couverture)</span></td><td>N/A (0/0)</td></tr><tr><td colspan="2"><p>Connexion &agrave; l&rsquo;application HRM<br />
+D&eacute;connexion de l&rsquo;application</p></td></tr></table><br/>
+<p style="page-break-before: always"></p><table class="req_spec"><tr><th colspan="2"><h3 class="doclevel"> <span class="label">1.1. Dossier d’exigences:</span> REQ1.1 : connexion à l'application HRM</h3></th></tr>
+<a name='toc_1_1'></a>
+<tr><td width="20%"><span class="label">Révision</span></td><td> 3</td></tr>
+<tr><td width="20%"><span class="label">Auteur</span></td><td> amine</td></tr>
+<tr><td width="20%"><span class="label">Type</span></td><td>Dossier d’exigences utilisateur</td></tr><tr><td width="20%"><span class="label">Nombre total d’exigences (Couverture)</span></td><td>N/A (5/0)</td></tr><tr><td colspan="2"><p><br />
+Description</p>
+
+<p><br />
+La fonctionnalit&eacute; de connexion &agrave; l&#39;application HRM permet aux utilisateurs de se connecter &agrave; leur compte<br />
+Orange HRM.</p>
+
+<p>Exigences fonctionnelles<br />
+1. L&#39;utilisateur doit pouvoir saisir son nom d&#39;utilisateur et son mot de passe pour se connecter &agrave;<br />
+l&#39;application HRM.<br />
+2. Si les informations saisies sont correctes, l&#39;utilisateur doit &ecirc;tre redirig&eacute; vers la page d&#39;accueil de<br />
+l&#39;application HRM.<br />
+3. Si les informations saisies sont incorrectes, un message d&#39;erreur doit s&#39;afficher pour informer<br />
+l&#39;utilisateur que la connexion a &eacute;chou&eacute;.<br />
+Exigences non fonctionnelles<br />
+1. La page de connexion doit &ecirc;tre s&eacute;curis&eacute;e et utiliser HTTPS pour prot&eacute;ger les informations de<br />
+connexion de l&#39;utilisateur.<br />
+2. Les champs de saisie doivent &ecirc;tre clairement &eacute;tiquet&eacute;s et accompagn&eacute;s d&#39;instructions pour<br />
+guider l&#39;utilisateur tout au long du processus de connexion.<br />
+Crit&egrave;res d&#39;acceptation<br />
+1. L&#39;utilisateur doit &ecirc;tre en mesure de se connecter &agrave; son compte en utilisant des informations de<br />
+connexion valides.<br />
+2. Si les informations de connexion sont invalides, un message d&#39;erreur appropri&eacute; doit s&#39;afficher<br />
+pour informer l&#39;utilisateur que la connexion a &eacute;chou&eacute;.<br />
+3. La page de connexion doit &ecirc;tre s&eacute;curis&eacute;e et utiliser HTTPS pour prot&eacute;ger les informations de<br />
+connexion de l&#39;utilisateur.<br />
+4. Les champs de saisie doivent &ecirc;tre clairement &eacute;tiquet&eacute;s et accompagn&eacute;s d&#39;instructions pour<br />
+guider l&#39;utilisateur tout au long du processus de connexion.</p></td></tr></table><br/>
+<table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ.1.1.1 : contrôle login mot de passe</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req9"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/3)</td></tr><tr><td colspan="2"> <br/><p>1. L&#39;utilisateur doit pouvoir saisir son nom d&#39;utilisateur et son mot de passe pour se connecter &agrave;<br />
+l&#39;application HRM.<br />
+2. Si les informations saisies sont correctes, l&#39;utilisateur doit &ecirc;tre redirig&eacute; vers la page d&#39;accueil de<br />
+l&#39;application HRM.<br />
+3. Si les informations saisies sont incorrectes, un message d&#39;erreur doit s&#39;afficher pour informer<br />
+l&#39;utilisateur que la connexion a &eacute;chou&eacute;.</p></td></tr><tr><td width="20%"><span class="label">Relations</span></td><td>a un impact sur: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REQ1.2.2 : déconnexion suite fermeture navigateur</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statut: Valide <br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.1.2 : régénération MDP</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>2</td></tr>
+<a name="toc_req12"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.1.3 : sécurité de la connexion</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req15"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.1.4 : connexion junique par utilisateur</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req17"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.1.5 : CHARTE GRAPHIQUE</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req19"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/></td></tr></table><br/><p style="page-break-before: always"></p><table class="req_spec"><tr><th colspan="2"><h3 class="doclevel"> <span class="label">1.2. Dossier d’exigences:</span> REQ1.2 : déconnexion à l'application HRM</h3></th></tr>
+<a name='toc_1_2'></a>
+<tr><td width="20%"><span class="label">Révision</span></td><td> 1</td></tr>
+<tr><td width="20%"><span class="label">Auteur</span></td><td> amine</td></tr>
+<tr><td width="20%"><span class="label">Type</span></td><td>Dossier d’exigences utilisateur</td></tr><tr><td width="20%"><span class="label">Nombre total d’exigences (Couverture)</span></td><td>N/A (4/0)</td></tr><tr><td colspan="2"><p>Description<br />
+La fonctionnalit&eacute; de d&eacute;connexion de l&#39;application HRM permet aux utilisateurs de se d&eacute;connecter de leur<br />
+compte Orange HRM.</p>
+
+<p>Exigences fonctionnelles<br />
+1. L&#39;utilisateur doit pouvoir cliquer sur un bouton &quot;D&eacute;connexion&quot; pour se d&eacute;connecter de l&#39;application<br />
+HRM.<br />
+2. Apr&egrave;s avoir cliqu&eacute; sur le bouton &quot;D&eacute;connexion&quot;, l&#39;utilisateur doit &ecirc;tre redirig&eacute; vers la page de<br />
+connexion.<br />
+Exigences non fonctionnelles<br />
+1. Le bouton &quot;D&eacute;connexion&quot; doit &ecirc;tre facilement accessible depuis n&#39;importe quelle page de<br />
+l&#39;application HRM.</p>
+
+<p>Crit&egrave;res d&#39;acceptation<br />
+L&#39;utilisateur doit &ecirc;tre en mesure de se d&eacute;connecter de son compte en cliquant sur le bouton<br />
+&quot;D&eacute;connexion&quot;.</p>
+
+<p>Apr&egrave;s avoir cliqu&eacute; sur le bouton &quot;D&eacute;connexion&quot;, l&#39;utilisateur doit &ecirc;tre redirig&eacute; vers la page de<br />
+connexion.</p></td></tr></table><br/>
+<table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.2.1 : deconnexion via boutton</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req21"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Cas d’utilisation</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/1)</td></tr><tr><td colspan="2"> <br/><p>retour &agrave; la page d&#39;authentification</p>
+
+<p>&nbsp;</p>
+
+<p>champ mit de passe libre</p></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.2.2 : déconnexion suite fermeture navigateur</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req23"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Non fonctionnel</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/8)</td></tr><tr><td colspan="2"> <br/><p>d&eacute;connexion suite fermeture navigateur</p></td></tr><tr><td width="20%"><span class="label">Relations</span></td><td>dépendant de: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REQ.1.1.1 : contrôle login mot de passe</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statut: Valide <br/></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.2.3 : déconnexion suite l'expiration session</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req25"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Non fonctionnel</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/8)</td></tr><tr><td colspan="2"> <br/><p>d&eacute;connexion suite l&#39;expiration session : 5 minutes</p></td></tr></table><br/><table class="req" ><tr><th colspan="2"><span class="label">Exigence:</span> REQ1.2.4 : charte graphique</th></tr>
+<tr><td valign="top"><span class="label">Version :</span></td><td>1</td></tr>
+<tr><td valign="top"><span class="label">Révision:</span></td><td>1</td></tr>
+<a name="toc_req27"></a><tr><td valign="top"><span class="label">Auteur:</span></td><td>amine</td></tr>
+<tr><td width="20%"><span class="label">Statut</span></td><td>Valide</td></tr><tr><td width="20%"><span class="label">Type</span></td><td>Non fonctionnel</td></tr><tr><td width="20%"><span class="label">Couverture</span></td><td>0% (0/8)</td></tr><tr><td colspan="2"> <br/><p>bouton d&eacute;connexion accecible depuis toutes les interfaces utilisateurs&nbsp;</p></td></tr></table><br/>
+</body>
+</html>
